@@ -14,7 +14,7 @@ app = func.FunctionApp()
 def web_scrape_to_pdf_pipeline(scrapetimer: func.TimerRequest, pdfblob: func.Out[bytes]):
     logging.info("--- Automated Web Scraping & PDF Ingestion Started ---")
 
-    target_url = "https://example.com" 
+    target_url = "https://en.wikipedia.org/wiki/Artificial_intelligence" 
     
     try:
         # 1. WEB SCRAPE: Fetch the active web page text
